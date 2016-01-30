@@ -71,8 +71,8 @@ void slove()
 			d = c[c1].adj[i].len;
 			if (!c[c2].closed)
 			{
-				c[c2].dist = c[c1].dist + d;
-				c[c2].team = c[c1].team + Team[c2];
+				c[c2].dist = v.dist + d;
+				c[c2].team = v.team + Team[c2];
 				opened.push(c[c2]);
 			}
 		}

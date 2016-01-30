@@ -1,13 +1,13 @@
 #include <iostream>
-
-int n;
-int now, next;
-int time;
+using namespace std;
 
 int main()
 {
+	int n;
+	int now, next;
+	int time;
 	time = 0;
-	std::cin >> n;
+	cin >> n;
 	now = 0;
 	for (int i = 0; i < n; ++i)
 	{
@@ -19,7 +19,7 @@ int main()
 		now = next;
 	}
 	time += n * 5;
-	std::cout << time;
+	cout << time;
 	system("pause");
 	return 0;
 }
